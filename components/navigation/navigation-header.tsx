@@ -52,7 +52,7 @@ const Navigation: React.FC<NavigationProps> = ({
               <button
                 className=""
               >
-                <Avatar img={currentUser.image!} />
+                <Avatar img={currentUser?.image!} />
               </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent

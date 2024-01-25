@@ -77,7 +77,7 @@ const ConversationItem = ({ data, selected }
                     selected ? 'bg-neutral-200' : 'bg-white hover:bg-gray-100'
                 )}>
                     <div className="m-3 ml-4">
-                        <Avatar img={data.image!} other={true} />
+                        <Avatar img={data?.image!} other={true} />
                     </div>
                     <div className="min-w-0 flex-1">
                         <div className="focus:outline-none">
@@ -111,7 +111,7 @@ const ConversationItem = ({ data, selected }
                     selected ? 'bg-neutral-200' : 'bg-white hover:bg-gray-100'
                 )}>
                     <div className="m-3 ml-4">
-                        <Avatar img={otherUser.image!} other={true} />
+                        <Avatar img={otherUser?.image!} other={true} />
                     </div>
                     <div className="min-w-0 flex-1">
                         <div className="focus:outline-none">

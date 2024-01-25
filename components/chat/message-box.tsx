@@ -24,12 +24,12 @@ const MessageBox = ({data,isLast}:MessageBoxProps) => {
 
     const body=cn("flex flex-col gap-2",isOwn && "items-end")
 
-    const message = cn("text-sm w-fit max-w-[500px] overflow-hidden" ,isOwn ? "bg-[#1f1f70] text-white " : "bg-[#e7eff7]",data.image ? "rounded-md p-0": "rounded-[20px] py-2 px-3" , isOwn && !data.image && "rounded-tr-none")
+    const message = cn("text-sm w-fit max-w-[500px] overflow-hidden" ,isOwn ? "bg-[#1f1f70] text-white " : "bg-[#e7eff7]",data?.image ? "rounded-md p-0": "rounded-[20px] py-2 px-3" , isOwn && !data?.image && "rounded-tr-none")
 
     return ( 
         <div className={container}>
             <div className={avatar}>
-                <Avatar img={data.sender.image!} other={true}/>
+                <Avatar img={data?.sender.image!} other={true}/>
             </div>
             <div className={body}>
                 <div className="flex items-center gap-1 ">
@@ -42,7 +42,7 @@ const MessageBox = ({data,isLast}:MessageBoxProps) => {
                 </div>
                 <div className={message}>
                     {data.image ? (
-                        <Image alt="Image" src={data.image} width="288" height="288" className="object-cover cursor-pointer hover:scale-110 transition translate"/>
+                        <Image alt="Image" src={data?.image} width="288" height="288" className="object-cover cursor-pointer hover:scale-110 transition translate"/>
                     ): (
                         <div>{data.body}</div>
                     )}
