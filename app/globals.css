@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,body, :root{
+    height: 100%;
+    
+  }
+
+.custom-gradient {
+  background: linear-gradient(
+    to right,
+    #cce4ff 0%,
+    #cce4ff 50%,
+    #1f1f70 50%,
+    #1f1f70 100%
+  );
+}
