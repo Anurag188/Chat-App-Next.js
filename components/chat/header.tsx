@@ -111,7 +111,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
                      <IoArrowBackOutline size={25} className="md:hidden m-5 mr-2 cursor-pointer" onClick={()=> router.push('/conversations')}/>
                     <div className="flex-1 flex m-3 gap-x-6 items-center">
 
-                        <Avatar img={otherUser.image!} other={true} />
+                        <Avatar img={otherUser?.image!} other={true} />
                         <div className="focus:outline-none">
                             <div
                                 className="flex justify-between"

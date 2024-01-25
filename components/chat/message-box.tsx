@@ -29,7 +29,7 @@ const MessageBox = ({data,isLast}:MessageBoxProps) => {
     return ( 
         <div className={container}>
             <div className={avatar}>
-                <Avatar img={data?.sender.image!} other={true}/>
+                <Avatar img={data?.sender?.image!} other={true}/>
             </div>
             <div className={body}>
                 <div className="flex items-center gap-1 ">
