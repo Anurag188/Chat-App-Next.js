@@ -123,7 +123,7 @@ export const Signup = () => {
                                 render={({ field }) => (
                                     <FormItem className="mb-4">
                                         <FormControl>
-                                            <Input disabled={isLoading} placeholder="Your Password" {...field} className="text-center" />
+                                            <Input type="password" disabled={isLoading} placeholder="Your Password" {...field} className="text-center" />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
