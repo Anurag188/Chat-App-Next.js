@@ -73,7 +73,7 @@ const ConversationItem = ({ data, selected }
         <>
             {data.isGroup && (
                 <button onClick={handleClick} className={cn(
-                    "flex h-[70px] md:w-[360px] w-[300px] ml-[20px] mr-[20px] shadow-md rounded-[10px]",
+                    "flex h-[70px] md:w-[360px] w-[340px] mx-[20px] shadow-md rounded-[10px]",
                     selected ? 'bg-neutral-200' : 'bg-white hover:bg-gray-100'
                 )}>
                     <div className="m-3 ml-4">
@@ -107,7 +107,7 @@ const ConversationItem = ({ data, selected }
             )}
             {!data.isGroup && (
                 <button onClick={handleClick} className={cn(
-                    "flex h-[70px] md:w-[360px] w-[300px] ml-[20px] mr-[20px] shadow-md rounded-[10px]",
+                    "flex h-[70px] md:w-[360px] w-[340px] ml-[20px] mr-[20px] shadow-md rounded-[10px]",
                     selected ? 'bg-neutral-200' : 'bg-white hover:bg-gray-100'
                 )}>
                     <div className="m-3 ml-4">
