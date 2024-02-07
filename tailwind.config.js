@@ -22,10 +22,10 @@ module.exports = {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
-        "bounce": {
-          '0%': { transform: 'scale(1)' },
+        "custom": {
+          '0%': { transform: 'scale(0)' },
           '100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(0)' },
+       
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
@@ -35,7 +35,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "bounce": 'bounce 0.5s ease-in-out infinite',
+        "custom": 'custom',
       },
     },
   },
